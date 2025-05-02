@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0"/>
+    <title>Madhu Kuruva - Space Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Background Stars -->
+  <div class="stars-container"></div>
+
+  <!-- Spaceship -->
+  <div class="spaceship"></div>
+
+  <nav class="navbar">
+    <div class="logo"><a href="#">Madhu Kuruva</a></div>
+    <input type="checkbox" id="menu-toggle" hidden />
+    <label for="menu-toggle" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <div >
+    <ul class="nav-links" id="nav">
+      <li><a href="#home" class="nav-item"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="#about-section" class="nav-item"><i class="fas fa-user"></i>About</a></li>
+      <li class="dropdown">
+        <a href="#services" class="nav-item"><i class="fas fa-briefcase"></i>Services ▾</a>
+        <div class="dropdown-content">
+          <a href="">Web Design</a>
+          <a href="#dev">Editing</a>
+          <a href="#seo">3D designs</a>
+        </div>
+      </li>
+      <li><a href="#contact-section" class="nav-item"><i class="fas fa-envelope"></i>Contact</a></li>
+    </ul>
+  </nav>
+</div>
+ <!-- profile pic -->
+ <div class="profile-container" >
+    <div class="glow-ring">
+      <img
+        src="images/madhu.jpg"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+    </div>
+    <div class="name-section">
+      <h1>MADHU  KURUVA </h1>
+      <p>Frontend Developer | Editor</p>
+    </div>
+<!-- About Me Section -->
+  
+<div class="about-section" id="about-section">
+  <h2 class="about-title">About Me</h2>
+  <p class="about-content">
+    Hello! I'm a front-end developer who crafts clean, responsive, and interactive user experiences. I have a passion for blending creativity with technology, using tools like HTML, CSS, and JavaScript to bring designs to life. Whether it's building from scratch or improving existing projects, I’m here to make things work beautifully on all devices.
+  </p>
+</div>
+  <!-- skills -->
+  <section class="skills-section">
+    <h2 class="skills-title">Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-category" style="--delay: 0.2s">
+        <h3 class="category-title">Frontend</h3>
+        <ul class="skill-list">
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-js-square"></i> JavaScript</li>
+          <li class="hide-skill"><i class="fab fa-react"></i> React</li>
+          <li class="hide-skill"><i class="fas fa-wind"></i> Tailwind CSS</li> <!-- Hidden example -->
+        </ul>
+      </div>
+
+      <div class="skill-category" style="--delay: 0.4s">
+        <h3 class="category-title">Non technical skills</h3>
+        <ul class="skill-list">
+          <li><i  class="fas fa-edit"></i>Video Editing</li>
+          <li><i class="fab fa-blender"></i> Blender</li>
+          <li class="hide-skill"><i class="fas fa-database"></i> </li>
+          <li class="hide-skill"><i class="fas fa-link"></i> REST APIs</li>
+        </ul>
+      </div>
+
+      <div class="skill-category" style="--delay: 0.6s">
+        <h3 class="category-title">Tools</h3>
+        <ul class="skill-list">
+          <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+          <li><i class="fas fa-code"></i> VS Code</li>
+          <li class="hide-skill"><i class="fab fa-figma"></i> Figma</li>
+          <li><i class="fas fa-paper-plane"></i> premiere pro</li>
+        </ul>
+      </div>
+
+      <div class="skill-category" style="--delay: 0.8s">
+        <h3 class="category-title">Soft Skills</h3>
+        <ul class="skill-list">
+          <li><i class="fas fa-comments"></i> Communication</li>
+          <li><i class="fas fa-users"></i> Teamwork</li>
+          <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+          <li><i class="fas fa-clock"></i> Time  Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+   
+  <section class="projects-section" id="project-section">
+    <h2 id="projects">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-tilt>
+        <a href="https://madhu097.github.io/portfolio/"><img src="images/Screenshot 2025-04-16 110600.png" alt="Project 1" /></a>
+        <a href="https://madhu097.github.io/portfolio/"><h3>Interactive Portfolio</h3></a>
+        <p>I created my first portfolio website for a friend, combining design and functionality to highlight their work..</p>
+      </div>
+      <div class="project-card" data-tilt>
+      <a href="https://madhu097.github.io/shopify/"><img src="images/Designer.jpeg" alt="Project 2" /></a>
+      <a href="https://madhu097.github.io/shopify/"><h3>Ecommerce Website</h3></a>
+        <p>a front-end ecommerce website using html,css and js.</p>
+      </div>
+      
+      <div class="project-card" data-tilt>
+        <a><img src="https://via.placeholder.com/400x200" alt="Project 3" /></a>
+        <h3>Hotel room booking management system using Ai</h3>
+        <p>Enhancing Reservations with Real-Time Scheduling solutions.</p>
+      </div>
+      
+  </section>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('education')">Education</button>
+      <button class="tab" onclick="showTab('certifications')">Certifications</button>
+    </div>
+
+    <!-- Education Tab -->
+    <div id="education" class="tab-content active">
+      <div class="edu-item">
+        <i class="fas fa-graduation-cap"></i>
+        <div>
+          <h3>BTech in Computer Science</h3>
+          <p>Malla Reddy Engineering College and Management Science, 2023 - 2026</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <i class="fas fa-laptop-code"></i>
+        <div>
+          <h3>Diploma in Electronics And Communication Engineering</h3>
+          <p>Anurag Engineering College, 2020 - 2023</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <i class="fas fa-school"></i>
+        <div>
+          <h3>High School SSC</h3>
+          <p>SR High School, 2019 - 2020</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Tab -->
+    <div id="certifications" class="tab-content">
+      <div class="edu-item">
+        <i class="fas fa-certificate"></i>
+        <div>
+          <h3>Html,css and JavaScript web development</h3>
+          <p>Udemy, 2025</p>
+          <a href="assests/udemy full stack.pdf" Download>
+            <button class="download-btn"><i class="fas fa-download"></i> Download Certificate</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <i class="fas fa-certificate"></i>
+        <div>
+          <h3>MYSQL and database</h3>
+          <p>Coursera, 2024</p>
+          <a href="assests/IBM DB0101EN Certificate _ Cognitive Class.pdf" download>
+            <button class="download-btn"><i class="fas fa-download"></i> Download Certificate</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="resume-section" id="resume-section">
+    <a href="assests/Madhu Resume.pdf" download
+       style="display: inline-block; padding: 14px 30px; background: #00ffff; color: #1a1a1a; font-size: 18px; font-weight: 600; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3); transition: all 0.3s ease; opacity: 0; transform: translateY(20px); animation: fadeInSlide 1s ease-out forwards; animation-delay: 0.5s;">
+      <span>Download Resume</span>
+    </a></div>
+
+  <div class="contact-section" id="contact-section">
+    <h2>Contact Me</h2>
+
+    <div class="social-list">
+      <a href="https://www.linkedin.com/in/madhukuruva9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-item" target="_blank">
+        <i class="fab fa-linkedin social-icon"></i>
+        <span class="social-text">LinkedIn</span>
+      </a>
+      <a href="https://github.com/Madhu097" class="social-item" target="_blank">
+        <i class="fab fa-github social-icon"></i>
+        <span class="social-text">GitHub</span>
+      </a>
+      <a href="madhukuruva20@gmail.com" class="social-item">
+        <i class="fas fa-envelope social-icon"></i>
+        <span class="social-text">Email</span>
+      </a>
+      <a href="https://x.com/HiestG86283" class="social-item" target="_blank">
+        <i class="fab fa-twitter social-icon"></i>
+        <span class="social-text">Twitter</span>
+      </a>
+      <a href="https://www.instagram.com/madhu_kuruva.9?igsh=dWtjOG8wM2thOGY2" class="social-item" target="_blank">
+        <i class="fab fa-instagram social-icon"></i>
+        <span class="social-text">Instagram</span>
+      </a>
+    </div>
+  </div>
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(t => {
+        t.classList.remove('active');
+      });
+      document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+  <!-- Add VanillaTilt.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <script>
+    // Initialize VanillaTilt.js for all project cards
+    VanillaTilt.init(document.querySelectorAll('.project-card'), {
+      max: 30, // Max tilt rotation angle
+      speed: 450, // Speed of the tilt
+      glare: true, // Enable glare effect
+      "max-glare": 0.2, // Max glare opacity
+      "glare-prerender": true, // Pre-render glare effect
+      touch: true, // Enable touch events for mobile
+    });
+  </script>
+
+
+ <!-- Back to Top Button -->
+ <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+   <!-- JS Scripts -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+ 
+     // Stars generator
+     const container = document.querySelector('.stars-container');
+     for (let i = 0; i < 200; i++) {
+       const star = document.createElement('div');
+       star.classList.add('stars');
+       star.style.left = Math.random() * 100 + 'vw';
+       star.style.top = Math.random() * 100 + 'vh';
+       star.style.animationDuration = (Math.random() * 2 + 0.5) + 's';
+       container.appendChild(star);
+     }
+ 
+     // Back to top logic
+     const topBtn = document.getElementById("topBtn");
+     window.onscroll = function () {
+       topBtn.style.display = document.documentElement.scrollTop > 300 ? "block" : "none";
+     };
+     function topFunction() {
+       document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+     }
+   </script>
+    <script>
+        // Toggle menu visibility on mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const navigation = document.getElementById('nav');
+    
+        menuToggle.addEventListener('change', () => {
+          navigation.classList.toggle('show');
+        });
+      </script>
+      <script>
+        // Toggle nav for mobile
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        toggle.addEventListener('change', () => {
+          nav.classList.toggle('show');
+        });
+    
+        // Toggle dropdown for mobile
+        const dropdown = document.querySelector('.dropdown');
+        dropdown.addEventListener('click', function(e) {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            this.classList.toggle('open');
+          }
+        });
+</body>
+</html>
